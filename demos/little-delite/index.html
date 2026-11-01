@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Little Delite | Noida</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;color:#333;background:#FFF5F8;line-height:1.6}
+a{text-decoration:none}
+header{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.nav{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+.nav .logo{font-weight:700;font-size:20px;color:#E91E63}
+.nav a.link{margin-left:18px;color:#444;font-size:15px}
+.btn{display:inline-block;background:#E91E63;color:#fff;padding:12px 26px;border-radius:30px;font-weight:600}
+.btn:hover{opacity:.92}
+.hero{min-height:68vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 20px}
+.hero h1{font-size:44px;line-height:1.15;margin-bottom:12px}
+.hero p{font-size:19px;max-width:640px;margin-bottom:10px}
+.rating{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.5);padding:6px 16px;border-radius:20px;font-size:15px;margin-bottom:22px}
+section{max-width:1100px;margin:0 auto;padding:56px 20px}
+h2{font-size:30px;color:#4A0E2E;margin-bottom:8px}
+.sub{color:#777;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border:1px solid #eee;border-radius:14px;padding:24px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.card h3{font-size:19px;margin-bottom:6px;color:#4A0E2E}
+.card p{color:#666;font-size:15px}
+.price{font-weight:700;color:#E91E63;font-size:18px;margin-top:10px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px}
+.contact{text-align:center;background:#FBDCE6;border-radius:16px;padding:44px 20px}
+.contact h2{margin-bottom:6px}
+.wa{display:inline-block;background:#25D366;color:#fff;padding:14px 30px;border-radius:30px;font-weight:700;font-size:17px;margin-top:16px}
+footer{background:#4A0E2E;color:#bbb;text-align:center;padding:22px 16px;font-size:14px}
+footer b{color:#fff}
+@media(max-width:640px){.hero h1{font-size:32px}.nav a.link{display:none}h2{font-size:25px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <span class="logo">The Little Delite</span>
+    <nav>
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#services">Services</a>
+      <a class="link" href="#gallery">Gallery</a>
+      <a class="link" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <h1>The Little Delite</h1>
+  <p>Theme cakes &amp; baking workshops in Noida</p>
+  <div class="rating">&#9733; Rated 4.9 &middot; 76 Google reviews</div>
+  <a class="btn" href="https://wa.me/919958599063?text=Hi%21%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire.">Order on WhatsApp</a>
+</section>
+<section id="about">
+  <h2>About Us</h2>
+  <p class="sub">Noida</p>
+  <p>The Little Delite in Noida bakes theme cakes that travel &mdash; including a 5 kg Peppa Pig cake that arrived intact after a 25 km journey &mdash; and runs hands-on baking workshops for beginners and enthusiasts.</p>
+</section>
+<section id="services">
+  <h2>Our Services</h2>
+  <p class="sub">Prices are indicative — message us on WhatsApp for the exact quote.</p>
+  <div class="grid">
+    <div class="card"><h3>Theme Cakes</h3><p>Peppa Pig, superheroes, florals &mdash; your theme.</p><div class="price">Rs. 999/kg onwards</div></div>
+    <div class="card"><h3>Custom Birthday Cake</h3><p>Your flavour, your design.</p><div class="price">Rs. 799/kg onwards</div></div>
+    <div class="card"><h3>Cupcakes</h3><p>Party boxes in assorted flavours.</p><div class="price">Rs. 59/piece</div></div>
+    <div class="card"><h3>Baking Workshop</h3><p>Hands-on baking, all levels welcome.</p><div class="price">Rs. 1,499/session</div></div>
+    <div class="card"><h3>Dessert Table</h3><p>Full dessert spread for events.</p><div class="price">Rs. 2,499 onwards</div></div>
+  </div>
+</section>
+<section id="gallery">
+  <h2>Gallery</h2>
+  <p class="sub">A look at what we do best.</p>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop" alt="The Little Delite gallery image 1" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=1200&auto=format&fit=crop" alt="The Little Delite gallery image 2" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=1200&auto=format&fit=crop" alt="The Little Delite gallery image 3" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1200&auto=format&fit=crop" alt="The Little Delite gallery image 4" loading="lazy">
+  </div>
+</section>
+<section id="contact">
+  <div class="contact">
+    <h2>Get in Touch</h2>
+    <p>Questions, bookings or custom orders — message us on WhatsApp and we will get back to you.</p>
+    <a class="wa" href="https://wa.me/919958599063?text=Hi%21%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire.">Chat on WhatsApp</a>
+    <p style="margin-top:14px;color:#888;font-size:15px">Noida</p>
+  </div>
+</section>
+<footer>
+  <b>The Little Delite</b> &middot; Noida<br>
+  Demo website prepared by Anmol Gautam
+</footer>
+</body>
+</html>
