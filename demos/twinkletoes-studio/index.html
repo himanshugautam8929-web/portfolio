@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twinkletoes Studio | Baby &amp; Family Photography in Greater Noida</title>
+<meta name="description" content="Twinkletoes Studio — natural light baby and family photography in Greater Noida by Prabhat and Meghna. Newborn, baby and family portraits, shot gently and beautifully. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#C96F5A;--rose-deep:#A94F3D;--rose-soft:#FBE9E2;--blush:#F7DAD2;--cream:#FFFBF6;--sand:#FDF1E7;--gold:#C99B3F;--ink:#3E2E28;--muted:#7A6A63;--wa:#25D366}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',system-ui,-apple-system,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
+a{text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:rgba(255,251,246,.96);backdrop-filter:blur(6px);box-shadow:0 1px 12px rgba(169,79,61,.10)}
+.nav{max-width:1140px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:16px 24px;gap:16px}
+.logo{font-family:'Fredoka',system-ui,sans-serif;font-weight:700;font-size:21px;color:var(--rose-deep);letter-spacing:.2px}
+.logo span{color:var(--gold)}
+.nav nav a{margin-left:26px;color:#5A463E;font-size:15px;font-weight:500}
+.nav nav a:hover{color:var(--rose)}
+.btn{display:inline-block;background:var(--rose);color:#fff;padding:13px 28px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(201,111,90,.35)}
+.btn.wa{background:var(--wa)}
+.hero{position:relative;min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:linear-gradient(160deg,#FBE9E2 0%,#FFFBF6 45%,#FDEEDD 100%)}
+.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(201,111,90,.22),transparent 65%);top:-140px;right:-80px}
+.hero::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(201,155,63,.20),transparent 65%);bottom:-120px;left:-60px}
+.hero-inner{position:relative;z-index:1;padding:90px 24px;max-width:820px}
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:600;color:var(--rose-deep);border:1px solid rgba(169,79,61,.45);padding:7px 18px;border-radius:999px;margin-bottom:22px}
+.hero h1{font-family:'Fredoka',system-ui,sans-serif;font-size:clamp(40px,6vw,64px);line-height:1.08;font-weight:700;margin-bottom:16px;color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--rose)}
+.hero p{font-size:19px;color:#6B564C;max-width:620px;margin:0 auto 12px}
+.hero .names{display:inline-block;font-weight:600;color:var(--rose-deep);background:rgba(255,255,255,.65);border:1px solid #F3D3C8;padding:8px 18px;border-radius:999px;font-size:15px;margin:14px 0 26px}
+.hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn.ghost{background:rgba(255,255,255,.7);border:1px solid var(--rose);color:var(--rose-deep)}
+section{max-width:1140px;margin:0 auto;padding:72px 24px}
+.section-head{text-align:center;max-width:640px;margin:0 auto 44px}
+.section-head h2{font-family:'Fredoka',system-ui,sans-serif;font-size:clamp(28px,4vw,38px);color:var(--rose-deep);margin-bottom:10px}
+.section-head p{color:var(--muted);font-size:17px}
+.kicker{font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:600;color:var(--gold)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-frame{position:relative;height:480px;border-radius:20px;overflow:hidden;background:linear-gradient(150deg,#F7DAD2,#FDF1E7 55%,#FBE9E2);box-shadow:0 18px 40px rgba(169,79,61,.16);display:flex;align-items:center;justify-content:center;text-align:center;padding:36px}
+.about-frame::before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;border:2px solid rgba(201,155,63,.45);top:36px;left:50%;transform:translateX(-50%)}
+.about-frame::after{content:"";position:absolute;width:210px;height:210px;border-radius:50%;background:radial-gradient(circle,rgba(201,111,90,.25),transparent 70%);bottom:20px;right:10px}
+.about-frame .quote{position:relative;z-index:1;font-family:'Fredoka',system-ui,sans-serif;font-size:26px;line-height:1.4;color:var(--rose-deep);font-weight:600}
+.about-frame .quote small{display:block;font-family:'Jost',system-ui,sans-serif;font-size:15px;font-weight:500;color:var(--muted);margin-top:14px}
+.about h2{font-family:'Fredoka',system-ui,sans-serif;font-size:clamp(28px,4vw,38px);color:var(--rose-deep);margin:10px 0 14px}
+.about p{color:#5A463E;font-size:17px;margin-bottom:14px}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.badge{background:#fff;border:1px solid #F3D3C8;color:var(--rose-deep);font-size:14px;font-weight:600;padding:8px 16px;border-radius:999px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.card{background:#fff;border:1px solid #F6E3D3;border-radius:18px;padding:30px 26px;box-shadow:0 4px 18px rgba(169,79,61,.05);transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(169,79,61,.12)}
+.card .icon{font-size:34px;margin-bottom:12px}
+.card h3{font-family:'Fredoka',system-ui,sans-serif;font-size:21px;color:var(--rose-deep);margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+.note{font-weight:600;color:var(--rose);font-size:15px;margin-top:14px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tile{height:380px;border-radius:16px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:28px;color:#fff;transition:transform .2s ease;position:relative;overflow:hidden}
+.tile:hover{transform:scale(1.015)}
+.tile::before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.16);top:-60px;right:-60px}
+.tile h3{font-family:'Fredoka',system-ui,sans-serif;font-size:24px;position:relative;z-index:1;margin-bottom:4px}
+.tile p{font-size:15px;color:rgba(255,255,255,.92);position:relative;z-index:1}
+.tile.t1{background:linear-gradient(165deg,#E8A08D,#C96F5A)}
+.tile.t2{background:linear-gradient(165deg,#D9B36A,#C99B3F)}
+.tile.t3{background:linear-gradient(165deg,#B98A7A,#8A5A4E)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;text-align:center}
+.step .num{width:52px;height:52px;margin:0 auto 14px;border-radius:50%;background:var(--rose-soft);color:var(--rose);font-family:'Fredoka',system-ui,sans-serif;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center}
+.step h3{font-family:'Fredoka',system-ui,sans-serif;font-size:19px;color:var(--rose-deep);margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.why-card{background:var(--rose-deep);color:#FBE9E2;border-radius:18px;padding:28px 24px}
+.why-card h3{font-family:'Fredoka',system-ui,sans-serif;font-size:19px;color:#fff;margin-bottom:6px}
+.why-card p{font-size:15px;color:#F3D3C8}
+.contact{background:var(--rose-deep);border-radius:24px;padding:56px 28px;text-align:center;color:#FBE9E2}
+.contact h2{font-family:'Fredoka',system-ui,sans-serif;font-size:clamp(26px,4vw,36px);color:#fff;margin-bottom:10px}
+.contact p{max-width:560px;margin:0 auto}
+.contact .btn{margin-top:26px}
+.contact .loc{margin-top:18px;color:#F3D3C8;font-size:15px}
+.contact .ig{display:inline-block;margin-top:14px;color:#fff;font-weight:600;border-bottom:1px solid rgba(255,255,255,.6)}
+footer{background:#33241F;color:#C9A99B;text-align:center;padding:26px 16px;font-size:14px;line-height:1.8}
+footer b{color:#fff;font-family:'Fredoka',system-ui,sans-serif;font-size:16px}
+@media(max-width:760px){.about{grid-template-columns:1fr;gap:28px}.about-frame{height:340px}.nav nav{display:none}.gallery{grid-template-columns:1fr}.tile{height:300px}section{padding:56px 20px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="#">Twinkletoes <span>Studio</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Moments</a>
+      <a href="#contact">Book</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Baby &amp; Family Photography &middot; Greater Noida</span>
+    <h1>Tiny toes,<br><em>timeless memories</em></h1>
+    <p>Natural light photography for your baby and your family — soft, honest and full of love, captured just the way these days really feel.</p>
+    <div class="names">Prabhat &amp; Meghna &middot; Natural Light Photographers</div>
+    <div class="hero-cta">
+      <a class="btn wa" href="https://wa.me/918010725870?text=Hi!%20I%20saw%20your%20website%20and%20would%20like%20to%20book%20a%20photo%20session.">Book on WhatsApp</a>
+      <a class="btn ghost" href="#gallery">See our work</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about">
+    <div class="about-frame">
+      <div class="quote">&ldquo;Babies don&rsquo;t keep. We capture the days you&rsquo;ll want to hold on to forever.&rdquo;<small>&mdash; Prabhat &amp; Meghna, Twinkletoes Studio</small></div>
+    </div>
+    <div>
+      <span class="kicker">About us</span>
+      <h2>Two photographers, one love — your little ones</h2>
+      <p>We are Prabhat and Meghna, natural light photographers from Greater Noida. Our niche is baby and family photography — the sleepy newborn days, the first smiles, the chaos and cuddles of family life.</p>
+      <p>We shoot in soft, natural light, with patience and no rushing. Your baby sets the pace; we simply follow with our cameras.</p>
+      <div class="badges">
+        <span class="badge">Natural Light</span>
+        <span class="badge">Baby &amp; Family</span>
+        <span class="badge">Greater Noida</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-head">
+    <span class="kicker">Our services</span>
+    <h2>Photography for every little milestone</h2>
+    <p>Message us on WhatsApp for packages and to book a date — every session is planned around your baby and your family.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><div class="icon">&#128118;</div><h3>Newborn Photography</h3><p>Those first sleepy days, captured gently and safely — soft wraps, tiny details and peaceful portraits of your brand-new baby.</p><div class="note">Enquire on WhatsApp</div></div>
+    <div class="card"><div class="icon">&#127873;</div><h3>Baby &amp; Milestones</h3><p>Sitting up, first birthdays and every milestone in between — joyful sessions that grow with your baby.</p><div class="note">Enquire on WhatsApp</div></div>
+    <div class="card"><div class="icon">&#128106;</div><h3>Family Portraits</h3><p>Parents, siblings and grandparents together — warm, natural family photographs you will treasure for years.</p><div class="note">Enquire on WhatsApp</div></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-head">
+    <span class="kicker">Moments we capture</span>
+    <h2>Every session tells a story</h2>
+    <p>A few of the stories we love to tell — from the very first days to the whole family together.</p>
+  </div>
+  <div class="gallery">
+    <div class="tile t1"><h3>First Days</h3><p>Sleepy newborn portraits, tiny fingers and toes, wrapped in softness.</p></div>
+    <div class="tile t2"><h3>Little Milestones</h3><p>First smiles, first sits, first birthdays — the moments that fly by.</p></div>
+    <div class="tile t3"><h3>Together, Always</h3><p>The whole family, just as you are — candid, warm and real.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <span class="kicker">Why families choose us</span>
+    <h2>Patient, gentle &amp; full of heart</h2>
+  </div>
+  <div class="why">
+    <div class="why-card"><h3>Natural light, always</h3><p>Soft, honest light — no harsh flashes, just the glow your baby deserves.</p></div>
+    <div class="why-card"><h3>Baby sets the pace</h3><p>Feeds, naps and cuddles come first. We wait for the moment, never force it.</p></div>
+    <div class="why-card"><h3>Real moments</h3><p>No stiff posing — the giggles, the yawns, the looks that are truly yours.</p></div>
+    <div class="why-card"><h3>Photos to keep forever</h3><p>Carefully edited portraits, ready to print, frame and share with family.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <span class="kicker">How it works</span>
+    <h2>Booking is simple</h2>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>Message us</h3><p>Tell us your baby&rsquo;s age and the kind of session you would like.</p></div>
+    <div class="step"><div class="num">2</div><h3>Pick a date</h3><p>We plan the session together and confirm your slot.</p></div>
+    <div class="step"><div class="num">3</div><h3>Treasure the photos</h3><p>Relax on the day — we handle everything, and deliver photos you will love.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2>Ready to capture these days?</h2>
+    <p>Questions, bookings or anything about your session — message us on WhatsApp and we will get back to you.</p>
+    <a class="btn wa" href="https://wa.me/918010725870?text=Hi!%20I%20saw%20your%20website%20and%20would%20like%20to%20book%20a%20photo%20session.">Chat on WhatsApp</a>
+    <br>
+    <a class="ig" href="https://www.instagram.com/twinkletoes.in" target="_blank" rel="noopener">Follow us on Instagram &middot; @twinkletoes.in</a>
+    <p class="loc">Twinkletoes Studio &middot; Unitech Cascades, Greater Noida, UP 201310<br>Call / WhatsApp: +91 80107 25870</p>
+  </div>
+</section>
+
+<footer>
+  <b>Twinkletoes Studio</b> &middot; Greater Noida<br>
+  Unitech Cascades &middot; Baby &amp; Family Photography
+</footer>
+</body>
+</html>
