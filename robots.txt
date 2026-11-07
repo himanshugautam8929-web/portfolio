@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anmolgautam-portfolio.onrender.com/sitemap.xml
