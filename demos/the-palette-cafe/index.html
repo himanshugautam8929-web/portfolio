@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Palette Cafe | Art Cafe, Sector 104, Noida</title>
+<meta name="description" content="The Palette Cafe — an art cafe in Sector 104, Noida. Paint pottery, canvas, tote bags and string art while you eat — coffee, pizza, pasta and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--acc:#E4572E;--acc2:#F2A541;--ink:#2E2A26;--bg:#FFF9F3;--card:#FFFFFF;--muted:#6E6259;--line:#F0DFCE}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',system-ui,-apple-system,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Fredoka',Georgia,serif;font-weight:700;line-height:1.15}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
+header{position:sticky;top:0;z-index:20;background:rgba(255,249,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:16px}
+.logo{font-family:'Fredoka',Georgia,serif;font-weight:700;font-size:22px}
+.logo span{color:var(--acc)}
+.nav nav a{margin-left:26px;font-size:15px;font-weight:500}
+.nav nav a:hover{color:var(--acc)}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:13px 28px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px -8px var(--acc)}
+.btn.wa{background:#1FA855}
+.btn.wa:hover{background:#178A45;box-shadow:0 10px 22px -8px #1FA855}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink);padding:11px 24px}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:72px 0 80px}
+.hero h1{font-size:52px;margin:16px 0 18px}
+.hero h1 em{font-style:italic;color:var(--acc)}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:520px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hero figure{border-radius:24px;overflow:hidden;box-shadow:0 24px 48px -16px rgba(0,0,0,.35)}
+.hero figure img{width:100%;height:540px;object-fit:cover}
+.hero figure figcaption{padding:12px 18px;background:#fff;font-size:13.5px;color:var(--muted)}
+.hero-art{border-radius:24px;min-height:540px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;color:#fff;box-shadow:0 24px 48px -16px rgba(0,0,0,.35);background:linear-gradient(135deg,#E4572E 0%,#F2A541 45%,#7FB069 75%,#4A7FA5 100%)}
+.hero-art .big{font-family:'Fredoka',Georgia,serif;font-size:120px;font-weight:700;line-height:1;opacity:.95}
+.hero-art p{font-size:19px;max-width:340px;margin-top:18px;opacity:.95}
+section{padding:72px 0}
+section h2{font-size:36px;margin:10px 0 12px}
+.sub{color:var(--muted);font-size:17px;max-width:640px}
+.about{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about p{color:var(--muted);font-size:17px}
+.about .facts{margin-top:28px;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.about .facts div{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.about .facts b{font-weight:600}
+.about .facts span{color:var(--muted);text-align:right}
+.about img{border-radius:20px;height:420px;width:100%;object-fit:cover;box-shadow:0 20px 40px -18px rgba(0,0,0,.3)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:36px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 32px -16px rgba(0,0,0,.18)}
+.card .icon{font-size:32px;margin-bottom:10px}
+.card h3{font-size:21px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.card .note{font-weight:600;color:var(--acc);font-size:14.5px;margin-top:14px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.gallery figure{border-radius:16px;overflow:hidden;position:relative}
+.gallery img{width:100%;height:300px;object-fit:cover;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px 16px 12px;background:linear-gradient(transparent,rgba(0,0,0,.65));color:#fff;font-size:14px;font-weight:500}
+.tile{height:300px;border-radius:16px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;color:#fff;position:relative;overflow:hidden}
+.tile h3{font-size:23px;position:relative;z-index:1}
+.tile p{font-size:15px;opacity:.92;position:relative;z-index:1}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.45))}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:36px;text-align:center}
+.step .num{width:52px;height:52px;margin:0 auto 14px;border-radius:50%;background:var(--acc);color:#fff;font-weight:700;font-size:22px;display:flex;align-items:center;justify-content:center}
+.step h3{font-size:19px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+.contact{background:var(--ink);color:#F5EDE4;border-radius:28px;padding:64px 48px;text-align:center}
+.contact h2{color:#fff}
+.contact p{color:#D8C6B4;max-width:560px;margin:0 auto}
+.contact .btn{margin-top:28px}
+.contact .addr{margin-top:20px;font-size:15px;color:#B9A48F}
+footer{padding:32px 0 40px;text-align:center;color:var(--muted);font-size:14.5px}
+footer b{color:var(--ink)}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr;gap:36px;padding:48px 0 56px}
+  .hero h1{font-size:38px}
+  .hero figure img{height:400px}
+  .hero-art{min-height:380px}
+  .hero-art .big{font-size:84px}
+  .about-grid{grid-template-columns:1fr;gap:32px}
+  .about img{height:320px}
+  .gallery{grid-template-columns:1fr 1fr}
+  .nav nav{display:none}
+  .contact{padding:48px 24px}
+  section{padding:56px 0}
+}
+@media(max-width:560px){.gallery{grid-template-columns:1fr}.hero h1{font-size:32px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#">The <span>Palette</span> Cafe</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn wa" href="https://wa.me/919217181674?text=Hi%21%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire.">Book a Table</a>
+  </div>
+</header>
+
+<section class="wrap hero">
+  <div>
+    <span class="eyebrow">Art Cafe &middot; Sector 104, Noida</span>
+    <h1>Paint, sip, eat — <em>make something yours.</em></h1>
+    <p class="lead">The Palette Cafe is an art cafe in Sector 104, Noida. Pick a canvas, a pot or a tote bag, paint something of your own, and enjoy good coffee and food while you create. No art skills needed.</p>
+    <div class="hero-cta">
+      <a class="btn wa" href="https://wa.me/919217181674?text=Hi%21%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire.">Book Your Art Table</a>
+      <a class="btn ghost" href="#services">Explore services</a>
+    </div>
+  </div>
+  <div class="hero-art"><div class="big">🎨</div><p>Delhi&rsquo;s favourite art cafe — now in Sector 104, Noida. Paint, eat, repeat.</p></div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">About Us</span>
+      <h2>A cafe where you make the art</h2>
+      <p>Most cafes ask you to sit and eat. Here you sit, eat — and paint. Choose a 3D miniature, a canvas, a tote bag or a string art board, pick your colours, and create something to take home.</p><p>It works for everyone: a date that is actually fun, a family afternoon without screens, or a quiet hour to yourself with a coffee and a brush.</p>
+      <div class="facts">
+        <div><b>Location</b><span>Plot 39, Sector 104, Noida</span></div><div><b>Hours</b><span>11:00 AM – 11:00 PM, every day</span></div><div><b>Concept</b><span>Art cafe — paint while you dine</span></div><div><b>Food</b><span>Pizza, pasta, sandwiches, wraps &amp; coffee</span></div>
+      </div>
+    </div>
+    <div class="hero-art" style="min-height:420px;background:linear-gradient(140deg,#4A7FA5,#7FB069 50%,#F2A541)"><div class="big" style="font-size:84px">🖌️</div><p>Pottery, canvas, tote bags &amp; string art — all under one roof.</p></div>
+  </div>
+</section>
+
+<section id="services" class="wrap">
+  <span class="eyebrow">What We Do</span>
+  <h2>Art, food &amp; good company</h2>
+  <p class="sub">Message us on WhatsApp to book a table, plan a birthday or ask about art activities.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">🏺</div><h3>Pottery &amp; Miniature Painting</h3><p>Paint 3D miniatures and ceramic pieces — little turtles, foxes and more — and take your creation home.</p><div class="note">Enquire on WhatsApp</div></div><div class="card"><div class="icon">🖼️</div><h3>Canvas Painting</h3><p>A blank canvas, your colours, your mood. Paint freestyle or follow a theme — we provide everything.</p><div class="note">Enquire on WhatsApp</div></div><div class="card"><div class="icon">👜</div><h3>Tote Bag Painting</h3><p>Design your own tote bag — a useful souvenir of a fun afternoon.</p><div class="note">Enquire on WhatsApp</div></div><div class="card"><div class="icon">🧵</div><h3>String Art</h3><p>Hammer, nails and thread — make geometric string art that looks great on any wall.</p><div class="note">Enquire on WhatsApp</div></div><div class="card"><div class="icon">☕</div><h3>Coffee &amp; Desserts</h3><p>Fresh coffee, shakes and desserts to keep you going while you paint.</p><div class="note">Enquire on WhatsApp</div></div><div class="card"><div class="icon">🍕</div><h3>Pizza, Pasta &amp; More</h3><p>Italian favourites, sandwiches, wraps and healthy plates — food for the whole table.</p><div class="note">Enquire on WhatsApp</div></div>
+  </div>
+</section>
+
+<section id="gallery" class="wrap">
+  <span class="eyebrow">Gallery</span>
+  <h2>What you can create here</h2>
+  <p class="sub">Every visit is different — here is a taste of the art waiting for you.</p>
+  <div class="gallery">
+    <div class="tile" style="background:linear-gradient(150deg,#E4572E,#F2A541)"><h3>Pottery Painting</h3><p>3D miniatures you paint and take home.</p></div><div class="tile" style="background:linear-gradient(150deg,#4A7FA5,#7FB069)"><h3>Canvas Painting</h3><p>A blank canvas and all the colours you need.</p></div><div class="tile" style="background:linear-gradient(150deg,#7FB069,#E4572E)"><h3>Tote Bag Painting</h3><p>Design a tote bag that is truly one of a kind.</p></div><div class="tile" style="background:linear-gradient(150deg,#F2A541,#E4572E)"><h3>String Art</h3><p>Thread, nails and patterns — surprisingly addictive.</p></div><div class="tile" style="background:linear-gradient(150deg,#E4572E,#4A7FA5)"><h3>Coffee &amp; Desserts</h3><p>Good coffee while you create.</p></div><div class="tile" style="background:linear-gradient(150deg,#4A7FA5,#F2A541)"><h3>Dates &amp; Family Days</h3><p>The rare outing everyone actually enjoys.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div style="text-align:center;max-width:640px;margin:0 auto 8px">
+    <span class="eyebrow">How It Works</span>
+    <h2>Getting started is simple</h2>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">1</div><h3>Message us</h3><p>Tell us when you are coming and how many of you there are.</p></div>
+    <div class="step"><div class="num">2</div><h3>Pick your art</h3><p>Choose pottery, canvas, tote bag or string art when you arrive.</p></div>
+    <div class="step"><div class="num">3</div><h3>Paint &amp; enjoy</h3><p>Create your piece, eat well, and take your art home with you.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="wrap">
+  <div class="contact">
+    <span class="eyebrow" style="color:#F0B48C">Get In Touch</span>
+    <h2>Come paint with us.</h2>
+    <p>Table bookings, birthdays, group outings or art questions — message us on WhatsApp and we will get back to you.</p>
+    <a class="btn wa" href="https://wa.me/919217181674?text=Hi%21%20I%20saw%20your%20website%20and%20would%20like%20to%20enquire.">Chat on WhatsApp</a>
+    <p class="addr">Plot 39, Sector 104, Noida<br>Call / WhatsApp: +91 92171 81674 &middot; Open: 11:00 AM – 11:00 PM</p>
+  </div>
+</section>
+
+<footer>
+  <b>The Palette Cafe</b> &middot; Sector 104, Noida<br>
+  Art Cafe &middot; Pottery, Canvas, Tote Bags &amp; String Art
+</footer>
+</body>
+</html>
